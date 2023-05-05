@@ -1,0 +1,10 @@
+name: First-workflow 
+on: workflow_dispatch #manually starting this workflow
+jobs:
+  first-job:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: print greeting
+        run : echo "hello world" #run a command that should execute in the command line
+      - name : print goodbay
+        run : echo "done-good-bye"
